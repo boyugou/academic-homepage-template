@@ -1,0 +1,12 @@
+# Side / open-source projects.
+#   name, href, description  (required)
+#   repo                     (optional, "owner/name" — adds a live ★ count from GitHub)
+
+- name: Project One
+  href: https://github.com/octocat/Hello-World
+  repo: octocat/Hello-World
+  description: A one-sentence description of your project.
+
+- name: Project Two
+  href: https://example.com/
+  description: Projects without a `repo` field show no star count.

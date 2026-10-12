@@ -1,0 +1,12 @@
+# Each entry is one education record.
+#   institution, degree, period (required); country (optional)
+
+- institution: Your University
+  country: Country
+  degree: Ph.D. in Computer Science
+  period: 2025.08 — Present
+
+- institution: Your Undergraduate University
+  country: Country
+  degree: B.S. in Computer Science
+  period: 2021.08 — 2025.06

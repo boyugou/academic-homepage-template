@@ -1,0 +1,11 @@
+# Each entry is one row in the Services list.
+#   label (required) — bold heading on the row
+#   html  (required) — body content (HTML allowed)
+
+- label: Conferences & Journals
+  html: Conference A'25–'26 · Conference B'26 · Journal C
+
+- label: Workshops
+  html: >
+    <a href="https://example.com/">Workshop One</a> @ Conference A'25 ·
+    Workshop Two @ Conference B'26

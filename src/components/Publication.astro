@@ -1,0 +1,60 @@
+---
+import { collectionDownloads, formatCompact } from '../lib/hfDownloads';
+
+/**
+ * A metric chip. A plain string is shown as-is. The object form fills
+ * `{n}` in `label` with the all-time Hugging Face downloads of
+ * `hf_collection` ("owner/slug"), fetched at build time; if the fetch
+ * fails, `{n}` is filled with `fallback` instead.
+ */
+type Highlight = string | { hf_collection: string; label: string; fallback: string };
+
+interface Props {
+  title: string;
+  authors: string;
+  venue: string;
+  collab?: string;
+  image: string;
+  paper?: string;
+  homepage?: string;
+  code?: string;
+  data?: string;
+  model?: string;
+  highlights?: Highlight[];
+}
+const { title, authors, venue, collab, image, paper, homepage, code, data, model, highlights } = Astro.props;
+const headline = paper ?? homepage ?? code ?? data ?? model;
+
+const chips = await Promise.all(
+  (highlights ?? []).map(async (h) => {
+    if (typeof h === 'string') return h;
+    const n = await collectionDownloads(h.hf_collection);
+    return h.label.replace('{n}', n === null ? h.fallback : formatCompact(n));
+  }),
+);
+---
+<article class="pub">
+  <img src={image} alt="" loading="lazy" />
+  <div>
+    <span class="venue">{venue}</span>
+    <div class="title">
+      {headline ? <a href={headline}>{title}</a> : title}
+    </div>
+    <div class="authors">
+      <span set:html={authors}></span>
+      {collab && <em class="collab"> ({collab})</em>}
+    </div>
+    {chips.length > 0 && (
+      <div class="pub-highlights">
+        {chips.map((h) => <span class="pub-highlight">{h}</span>)}
+      </div>
+    )}
+    <div class="pub-links">
+      {paper && <a href={paper}>Paper</a>}
+      {homepage && <a href={homepage}>Homepage</a>}
+      {code && <a href={code}>Code</a>}
+      {data && <a href={data}>Data</a>}
+      {model && <a href={model}>Model</a>}
+    </div>
+  </div>
+</article>

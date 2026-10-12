@@ -1,0 +1,8 @@
+# ─── Astro / Node ───
+node_modules/
+.astro/
+dist/
+npm-debug.log*
+
+# ─── macOS ───
+.DS_Store

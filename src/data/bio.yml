@@ -1,0 +1,14 @@
+# Bio paragraphs shown in the "About" section.
+# Each entry is rendered as one <p>. HTML (e.g., <a>, <strong>) is supported.
+paragraphs:
+  - >
+    Hi, I'm Your Name — a Ph.D. student at Your University, advised by
+    <a href="https://example.com/">Prof. Advisor Name</a> in the
+    <a href="https://example.com/">Your Lab</a>.
+  - >
+    My research focuses on <a href="https://example.com/">your research topic</a>.
+    Replace this paragraph with a short summary of your research agenda
+    and the problems you care about.
+  - >
+    I'm currently working on your current project. If any of this resonates,
+    I'd love to hear from you — drop me an email.

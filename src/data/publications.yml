@@ -1,0 +1,31 @@
+# Selected publications, newest first. See README.md for all fields.
+# `authors` accepts HTML; wrap your own name in <strong>.
+
+- title: "Your Paper Title Goes Here"
+  authors: >
+    <strong>Your Name</strong>, <a href="https://example.com/">Coauthor One</a>,
+    Coauthor Two
+  venue: Conference 2026
+  image: /assets/img/paper-placeholder.svg
+  paper: https://arxiv.org/
+  homepage: https://example.com/
+  code: https://github.com/
+  highlights:
+    - Oral
+
+- title: "Another Paper Title With a Hugging Face Collection"
+  authors: >
+    Coauthor One, <strong>Your Name</strong>, Coauthor Two
+  collab: Industry Partner      # optional, shown in italics after the authors
+  venue: Journal 2025
+  image: /assets/img/paper-placeholder.svg
+  paper: https://arxiv.org/
+  code: https://github.com/
+  data: https://huggingface.co/
+  model: https://huggingface.co/
+  highlights:
+    # Live download count of a Hugging Face collection, refreshed monthly.
+    # Remove this entry if you don't use Hugging Face.
+    - hf_collection: owner/collection-slug
+      label: "{n} HF downloads"
+      fallback: 1K+

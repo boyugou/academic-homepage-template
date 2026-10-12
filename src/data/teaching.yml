@@ -1,0 +1,12 @@
+# Optional intro line above the list (HTML allowed). Set to empty string to hide.
+intro: Teaching Assistant at Your University.
+
+courses:
+  - course: CS101 Course Title
+    period: Fall 2025
+    html: >
+      Instructor: <a href="https://example.com/">Prof. Name</a>
+
+  - course: CS201 Another Course
+    period: Spring 2026
+    html: "Instructor: Dr. Name"

@@ -1,0 +1,39 @@
+# ─── Basic identity ──────────────────────────────────────
+name: Your Name
+nameHan: ""            # optional name in another script; leave empty to hide
+position: Ph.D. Student in Computer Science
+affiliation: Your University
+email: you[at]university[dot]edu
+
+# ─── SEO ─────────────────────────────────────────────────
+url: https://YOUR-USERNAME.github.io/   # canonical URL; also set `site` in astro.config.mjs
+title: Your Name
+description: Homepage of Your Name — Ph.D. student at Your University, working on your research area.
+keywords: your name, research area, your university
+
+# ─── Profile picture ─────────────────────────────────────
+avatar: /assets/img/avatar.svg
+favicon: /assets/img/favicon.svg
+
+# ─── Social links ────────────────────────────────────────
+# Icons: Font Awesome 6 (fab fa-*) and Academicons (ai ai-*).
+social:
+  - icon: ai ai-google-scholar
+    label: Google Scholar
+    href: https://scholar.google.com/
+  - icon: fab fa-github
+    label: GitHub
+    href: https://github.com/
+  - icon: fab fa-linkedin
+    label: LinkedIn
+    href: https://www.linkedin.com/
+  - icon: fab fa-x-twitter
+    label: X (Twitter)
+    href: https://x.com/
+
+# ─── Contact callout ─────────────────────────────────────
+# Set `enabled: true` to show a callout at the top of the About section.
+contact:
+  enabled: false
+  message: >
+    Interested in a collaboration or just a short chat? Feel free to email me.

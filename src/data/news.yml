@@ -1,0 +1,20 @@
+# News items, newest first.
+# `tags` are small pills shown after the message; `tone` controls color:
+#   accept (green) | oral (red) | (omit for default gray)
+
+- date: 2026.06
+  html: >
+    <a href="https://example.com/"><strong>Paper Title</strong></a>
+    accepted to Conference 2026
+  tags:
+    - { label: Oral, tone: oral }
+
+- date: 2026.01
+  html: >
+    Released <a href="https://example.com/"><strong>Project Name</strong></a>,
+    a short description of the release.
+  tags:
+    - { label: Conference 2026, tone: accept }
+
+- date: 2025.08
+  html: Started the Ph.D. program at Your University.
