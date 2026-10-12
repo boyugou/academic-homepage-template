@@ -1,4 +1,5 @@
 ---
+import { withBase } from '../lib/withBase';
 import { collectionDownloads, formatCompact } from '../lib/hfDownloads';
 
 /**
@@ -34,7 +35,7 @@ const chips = await Promise.all(
 );
 ---
 <article class="pub">
-  <img src={image} alt="" loading="lazy" />
+  <img src={withBase(image)} alt="" loading="lazy" />
   <div>
     <span class="venue">{venue}</span>
     <div class="title">

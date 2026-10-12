@@ -1,8 +1,9 @@
 ---
 import site from '../data/site.yml';
+import { withBase } from '../lib/withBase';
 ---
 <aside>
-  <img class="avatar" src={site.avatar} alt={site.name} />
+  <img class="avatar" src={withBase(site.avatar)} alt={site.name} />
   <h1 class="name">
     {site.name}
     {site.nameHan && <span class="han">{site.nameHan}</span>}

@@ -7,12 +7,15 @@ themes, responsive layout, and automatic deployment to GitHub Pages.
 Sections: About · News · Selected Publications · Projects · Academic Services ·
 Education · Teaching.
 
+**Live demo:** https://boyugou.github.io/academic-homepage-template/
+
 ## Quick start
 
-1. Click **Use this template** (or fork) and name the repo `YOUR-USERNAME.github.io`.
+1. Click **Use this template** (or fork). Name the repo `YOUR-USERNAME.github.io` for a root URL.
 2. In the repo, go to **Settings → Pages → Source: GitHub Actions**.
-3. Edit the files in `src/data/` (see below), set `site` in `astro.config.mjs`
-   and `url` in `src/data/site.yml` to your URL.
+3. Edit the files in `src/data/` (see below). `site` and `base` are derived from the
+   repository name automatically, so the site works as `USER.github.io` or as a project
+   site at `USER.github.io/REPO/`.
 4. Replace `public/assets/img/avatar.svg` with your photo (update `avatar` in `site.yml`).
 5. Push to `main`; the workflow builds and deploys the site.
 

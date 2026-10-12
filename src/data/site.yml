@@ -6,7 +6,6 @@ affiliation: Your University
 email: you[at]university[dot]edu
 
 # ─── SEO ─────────────────────────────────────────────────
-url: https://YOUR-USERNAME.github.io/   # canonical URL; also set `site` in astro.config.mjs
 title: Your Name
 description: Homepage of Your Name — Ph.D. student at Your University, working on your research area.
 keywords: your name, research area, your university
